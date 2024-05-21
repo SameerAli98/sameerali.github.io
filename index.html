@@ -3,72 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Your Name's Portfolio" />
-    <title>Your Name - Portfolio</title>
+    <title>Sameer Ali | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Your Name</h1>
-      <p>Web Developer | Designer | Programmer</p>
+      <div class="container">
+        <h1>Sameer Ali</h1>
+        <p class="tagline">Full Stack Developer</p>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Welcome to my portfolio! I am a web developer with a passion for
-        creating beautiful and functional websites. With experience in HTML,
-        CSS, JavaScript, and more, I enjoy bringing ideas to life on the web.
-      </p>
-    </section>
-
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="portfolio-item">
-        <h3>Project Title 1</h3>
-        <p>Description of Project 1</p>
-        <a href="link-to-project-1" target="_blank">View Project</a>
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="profile-pic">
+          <img src="Sameer.jpg" alt="Sameer Ali" />
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm Sameer Ali, a passionate Full Stack Developer with
+            experience in creating dynamic and responsive websites. I enjoy
+            turning complex problems into simple, beautiful, and intuitive
+            designs.
+          </p>
+          <a href="resume.pdf" class="btn" target="_blank">View Resume</a>
+          <div class="social-media">
+            <a
+              href="https://linkedin.com/in/SameerAli98"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/SameerAli98"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-item">
-        <h3>Project Title 2</h3>
-        <p>Description of Project 2</p>
-        <a href="link-to-project-2" target="_blank">View Project</a>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project">
+            <h3>Blockchain based Digital Identity Management</h3>
+            <p>
+              A project aimed to provide secure method of storing and sharing
+              digital credentials, certificates and degrees. It utilizes
+              decentralized networks to eliminate storage of important
+              credentials on vulnerable servers that are prone to hijacking and
+              hacking. The blockchain architecture makes sure that the
+              credentials are tamper-proof by generating Non-fungible tokens of
+              the credentials. It uses smart contracts written in clarity and is
+              built on Stacks Blockchain, Node.js and React Framework, paired
+              with Gaia as the cloud provider for storing secured credentials.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Interactive 2-Player Chess</h3>
+            <p>
+              Developed a two-player chess game in C++ using Object-Oriented
+              Programming (OOP) and the GP142 GUI library. Designed the game
+              with modular classes for each chess piece, encapsulating movement
+              rules and interactions. Implemented standard chess rules,
+              turn-based play, and move validation. The GP142 library provided a
+              graphical interface, enabling click-and-drag piece movement and
+              valid move highlighting. This project enhanced my skills in OOP,
+              game state management, and GUI development.
+            </p>
+          </div>
+          <div class="project">
+            <h3>AI-based Interactive Connect 4</h3>
+            <p>
+              Developed an AI-based Connect Four game in Java utilizing the
+              Minimax algorithm for decision-making. Implemented the game logic
+              and AI opponent, enabling the computer to evaluate potential moves
+              and select optimal plays based on future outcomes. The Minimax
+              algorithm, enhanced with alpha-beta pruning for efficiency,
+              ensured competitive AI performance. This project honed my skills
+              in artificial intelligence, algorithm optimization, and strategic
+              game development.
+            </p>
+          </div>
+        </div>
       </div>
-      <!-- Add more portfolio items as needed -->
     </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        If you'd like to get in touch, feel free to reach out to me via email or
-        connect with me on LinkedIn.
-      </p>
-      <ul>
-        <li>
-          Email:
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
-        </li>
-        <li>
-          LinkedIn:
-          <a href="your-linkedin-profile" target="_blank"
-            >Your LinkedIn Profile</a
-          >
-        </li>
-        <!-- Add more contact methods as needed -->
-      </ul>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
   </body>
 </html>
